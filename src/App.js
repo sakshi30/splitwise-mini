@@ -67,6 +67,7 @@ export default function App() {
       </div>
       {selectedFriend && (
         <FriendSplitBill
+          key={selectedFriend.id}
           selectedFriend={selectedFriend}
           handleBillChange={onBillChange}
         />
